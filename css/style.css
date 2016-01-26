@@ -10,9 +10,21 @@
 .loading-bar {
 	width: 400px;
 	height: 20px;
-	border: 2px solid black;
+	border: 5px solid black;
 	border-radius: 5px;
-	/*ADD YOUR ANIMATION HERE!*/
+}
+
+.loading-insert {
+	width: 398px;
+	height: 18px;
+	padding: 1px;
+	background-color: red;
+	animation: load-animation 7s 1;
 }
 
 /*ADD ANY OTHER CSS CODE HERE!*/
+
+@keyframes load-animation {
+  0%   { width: 0; }
+  100% { width: 398; }
+}
